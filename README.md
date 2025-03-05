@@ -1,6 +1,7 @@
-# QR Code Generator in Laravel 11
+# I learn Create QR Code Generator in Laravel 11
 
-A simple yet elegant QR Code Generator built using Laravel 11. This application allows users to generate QR codes by entering text and download them as images.
+
+A simple yet elegant QR Code Generator built using Laravel 11. This application allows users to generate QR codes by entering text and Links.
 
 ---
 
@@ -11,9 +12,6 @@ A simple yet elegant QR Code Generator built using Laravel 11. This application 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Screenshots](#screenshots)
-- [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-
 ---
 
 ## Features
@@ -31,8 +29,7 @@ Before running this project, ensure you have the following installed:
 
 - PHP 8.1 or higher
 - Composer
-- Laravel CLI
-- MySQL or any supported database
+- Laravel 11
 - Node.js (optional, for asset management)
 
 ---
@@ -42,4 +39,20 @@ Before running this project, ensure you have the following installed:
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/TaherZreeka/QR-App.git
-   cd qr-code-generator
+   cd QR-App
+   composer install
+   npm install
+   cp .env.example .env
+   composer require simplesoftwareio/laravel-qr-code
+   php artisan serve
+   http://localhost:8000/qr-code
+
+## Screenshots
+
+Below are some screenshots of the QR Code Generator in action:
+
+### **Home Page (Input Form)**
+![Home Page](https://raw.githubusercontent.com/TaherZreeka/QR-App/main/public/qrcode/Screenshot%20(102).png)
+
+### **Generated QR Code with Download Button**
+![Generated QR Code](https://raw.githubusercontent.com/TaherZreeka/QR-App/main/public/qrcode/Screenshot%20(101).png)
